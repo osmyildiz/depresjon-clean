@@ -1,0 +1,67 @@
+cff-version: 1.2.0
+title: >-
+  Subject-Aware Detection of Depression from Wrist Actigraphy Using
+  Per-Subject Distributional Aggregation and Interpretable Biomarker Analysis
+message: >-
+  If you use this software, please cite the accompanying manuscript and this
+  repository.
+type: software
+authors:
+  - given-names: Osman
+    family-names: Yildiz
+    email: oyildiz@albany.edu
+    affiliation: >-
+      Information Sciences & Technology Dept., College of Emergency
+      Preparedness, Homeland Security & Cybersecurity, University at Albany,
+      SUNY, Albany, NY, USA
+  - given-names: Muhammed Enes
+    family-names: Subasi
+    email: muhammedenessubasi@gmail.com
+    affiliation: >-
+      AI4INNOVATIONS, Izmir, Türkiye
+  - given-names: Mustafa
+    family-names: Karabulut
+    email: mkarabulut@megalabs.ai
+    affiliation: >-
+      Megalabs, Palo Alto, CA, USA
+  - given-names: Abdulhamit
+    family-names: Subasi
+    email: asubasi@albany.edu
+    affiliation: >-
+      Information Sciences & Technology Dept., College of Emergency
+      Preparedness, Homeland Security & Cybersecurity, University at Albany,
+      SUNY, Albany, NY, USA
+repository-code: 'https://github.com/osmyildiz/depresjon-clean'
+abstract: >-
+  Reproducible pipeline for subject-level depression detection on the
+  Depresjon benchmark, combining per-subject distributional aggregation of
+  TSFEL features, strict leave-one-subject-out cross-validation, Wilson 95%
+  confidence intervals, and Holm-corrected exact McNemar tests. The headline
+  configuration (Information Gain + Bagging, TSFEL-only) reaches 0.927
+  accuracy on 55 subjects (sensitivity 0.913, specificity 0.938).
+keywords:
+  - depression detection
+  - wrist actigraphy
+  - subject-level evaluation
+  - leave-one-subject-out
+  - TSFEL
+  - circadian biomarkers
+  - interpretable machine learning
+license: MIT
+preferred-citation:
+  type: article
+  title: >-
+    Subject-Aware Detection of Depression from Wrist Actigraphy Using
+    Per-Subject Distributional Aggregation and Interpretable Biomarker
+    Analysis
+  authors:
+    - given-names: Osman
+      family-names: Yildiz
+    - given-names: Muhammed Enes
+      family-names: Subasi
+    - given-names: Mustafa
+      family-names: Karabulut
+    - given-names: Abdulhamit
+      family-names: Subasi
+  year: 2025
+  notes: Under review.

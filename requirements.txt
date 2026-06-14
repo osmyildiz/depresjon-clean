@@ -1,0 +1,30 @@
+# Core scientific stack
+numpy==1.24.4
+pandas==2.0.3
+scipy==1.10.1
+
+# Machine learning
+scikit-learn==1.3.2
+xgboost==2.1.4
+imbalanced-learn==0.12.4
+joblib==1.4.2
+threadpoolctl==3.5.0
+
+# Statistics (McNemar, Wilson CI, cosinor)
+statsmodels==0.14.1
+patsy==1.0.2
+
+# Time series feature extraction
+tsfel==0.2.0
+PyWavelets==1.4.1
+
+# I/O / cache
+pyarrow==17.0.0
+
+# Transitive (pinned for full reproducibility)
+python-dateutil==2.9.0.post0
+pytz==2026.2
+tzdata==2026.2
+packaging==26.2
+six==1.17.0
+typing_extensions==4.13.2
