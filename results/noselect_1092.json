@@ -1,0 +1,78 @@
+{
+  "noselect_1092": {
+    "rf": {
+      "correct": [
+        45,
+        45,
+        45,
+        45,
+        45
+      ],
+      "mean_acc": 0.8182,
+      "min_acc": 0.8182,
+      "max_acc": 0.8182
+    },
+    "bagging": {
+      "correct": [
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "mean_acc": 0.8727,
+      "min_acc": 0.8727,
+      "max_acc": 0.8727
+    },
+    "logreg": {
+      "correct": [
+        45,
+        45,
+        45,
+        45,
+        45
+      ],
+      "mean_acc": 0.8182,
+      "min_acc": 0.8182,
+      "max_acc": 0.8182
+    }
+  },
+  "noselect_1092_resid": {
+    "rf": {
+      "correct": [
+        40,
+        39,
+        43,
+        42,
+        41
+      ],
+      "mean_acc": 0.7455,
+      "min_acc": 0.7091,
+      "max_acc": 0.7818
+    },
+    "bagging": {
+      "correct": [
+        42,
+        43,
+        43,
+        43,
+        42
+      ],
+      "mean_acc": 0.7745,
+      "min_acc": 0.7636,
+      "max_acc": 0.7818
+    },
+    "logreg": {
+      "correct": [
+        43,
+        43,
+        43,
+        43,
+        43
+      ],
+      "mean_acc": 0.7818,
+      "min_acc": 0.7818,
+      "max_acc": 0.7818
+    }
+  }
+}

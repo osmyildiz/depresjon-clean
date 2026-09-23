@@ -1,0 +1,37 @@
+{
+  "bagging_1092_correct": 48,
+  "nuisance_depth2_correct": 44,
+  "mcnemar_bagging_vs_nuisance": {
+    "A_right_B_wrong": 6,
+    "B_right_A_wrong": 2,
+    "exact_p": 0.2891
+  },
+  "stratum_13_14": {
+    "n": 25,
+    "majority": 0.6,
+    "bagging_correct": 21,
+    "bagging_wilson": [
+      0.653,
+      0.936
+    ],
+    "nuisance_correct": 19,
+    "mcnemar_in_stratum": {
+      "A_right_B_wrong": 3,
+      "B_right_A_wrong": 1,
+      "exact_p": 0.625
+    }
+  },
+  "nuisance_errors": [
+    "condition_10",
+    "condition_13",
+    "condition_16",
+    "condition_2",
+    "condition_20",
+    "condition_23",
+    "condition_3",
+    "condition_4",
+    "condition_5",
+    "condition_9",
+    "control_13"
+  ]
+}

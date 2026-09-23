@@ -1,0 +1,158 @@
+{
+  "n": 55,
+  "stump_daycount": {
+    "correct": 40,
+    "errors": [
+      "condition_13",
+      "condition_16",
+      "condition_2",
+      "condition_20",
+      "condition_23",
+      "control_10",
+      "control_13",
+      "control_14",
+      "control_15",
+      "control_22",
+      "control_23",
+      "control_24",
+      "control_25",
+      "control_27",
+      "control_30"
+    ]
+  },
+  "nuisance3_stump": {
+    "correct": 40,
+    "accuracy": 0.7273
+  },
+  "nuisance3_tree_depth2": {
+    "correct": 44,
+    "accuracy": 0.8
+  },
+  "nuisance3_logreg": {
+    "correct": 38,
+    "accuracy": 0.6909
+  },
+  "stratum_13_14": {
+    "n": 25,
+    "depressed": 15,
+    "control": 10
+  },
+  "bagging_1092_seeds": [
+    {
+      "seed": 0,
+      "correct": 48,
+      "errors": [
+        "condition_16",
+        "condition_2",
+        "condition_3",
+        "condition_4",
+        "control_13",
+        "control_15",
+        "control_4"
+      ],
+      "mcnemar_vs_stump": {
+        "A_right_B_wrong": 11,
+        "B_right_A_wrong": 3,
+        "exact_p": 0.0574
+      },
+      "error_overlap_with_stump": 4,
+      "stratum_13_14_correct": 21,
+      "stratum_13_14_acc": 0.84,
+      "stratum_13_14_sens": 0.8667,
+      "stratum_13_14_spec": 0.8
+    },
+    {
+      "seed": 1,
+      "correct": 48,
+      "errors": [
+        "condition_16",
+        "condition_2",
+        "condition_3",
+        "condition_4",
+        "control_13",
+        "control_15",
+        "control_4"
+      ],
+      "mcnemar_vs_stump": {
+        "A_right_B_wrong": 11,
+        "B_right_A_wrong": 3,
+        "exact_p": 0.0574
+      },
+      "error_overlap_with_stump": 4,
+      "stratum_13_14_correct": 21,
+      "stratum_13_14_acc": 0.84,
+      "stratum_13_14_sens": 0.8667,
+      "stratum_13_14_spec": 0.8
+    },
+    {
+      "seed": 2,
+      "correct": 48,
+      "errors": [
+        "condition_16",
+        "condition_2",
+        "condition_3",
+        "condition_4",
+        "control_13",
+        "control_15",
+        "control_4"
+      ],
+      "mcnemar_vs_stump": {
+        "A_right_B_wrong": 11,
+        "B_right_A_wrong": 3,
+        "exact_p": 0.0574
+      },
+      "error_overlap_with_stump": 4,
+      "stratum_13_14_correct": 21,
+      "stratum_13_14_acc": 0.84,
+      "stratum_13_14_sens": 0.8667,
+      "stratum_13_14_spec": 0.8
+    },
+    {
+      "seed": 3,
+      "correct": 48,
+      "errors": [
+        "condition_16",
+        "condition_2",
+        "condition_3",
+        "condition_4",
+        "control_13",
+        "control_15",
+        "control_4"
+      ],
+      "mcnemar_vs_stump": {
+        "A_right_B_wrong": 11,
+        "B_right_A_wrong": 3,
+        "exact_p": 0.0574
+      },
+      "error_overlap_with_stump": 4,
+      "stratum_13_14_correct": 21,
+      "stratum_13_14_acc": 0.84,
+      "stratum_13_14_sens": 0.8667,
+      "stratum_13_14_spec": 0.8
+    },
+    {
+      "seed": 4,
+      "correct": 48,
+      "errors": [
+        "condition_10",
+        "condition_16",
+        "condition_2",
+        "condition_3",
+        "condition_4",
+        "control_13",
+        "control_15"
+      ],
+      "mcnemar_vs_stump": {
+        "A_right_B_wrong": 11,
+        "B_right_A_wrong": 3,
+        "exact_p": 0.0574
+      },
+      "error_overlap_with_stump": 4,
+      "stratum_13_14_correct": 20,
+      "stratum_13_14_acc": 0.8,
+      "stratum_13_14_sens": 0.8,
+      "stratum_13_14_spec": 0.8
+    }
+  ],
+  "stratum_majority": 0.6
+}

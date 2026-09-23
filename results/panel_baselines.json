@@ -1,0 +1,70 @@
+{
+  "daycount_baseline": {
+    "full": {
+      "n": 55,
+      "majority": 0.5818181818181818,
+      "auc_model_free_fewer_days_is_depressed": 0.7370923913043478,
+      "stump_loso_accuracy": 0.7272727272727273,
+      "stump_correct": 40,
+      "wilson95": [
+        0.5976780188511898,
+        0.8271924806280252
+      ]
+    },
+    "overlap_13_28": {
+      "n": 47,
+      "majority": 0.5319148936170213,
+      "auc_model_free_fewer_days_is_depressed": 0.6481818181818181,
+      "stump_loso_accuracy": 0.6808510638297872,
+      "stump_correct": 32,
+      "wilson95": [
+        0.5383265689347735,
+        0.7960462125259659
+      ]
+    }
+  },
+  "zcr_vs_bout_count": {
+    "pearson_day_level": 0.9999640971803512,
+    "median_zcr_over_bouts_day_level": 1.9854014598540146,
+    "pearson_subject_mean": 0.9999735813723271,
+    "spearman_subject_mean": 0.9997835419748186
+  },
+  "jakobsen_three_feature_baseline": {
+    "per_day_majority_vote_logreg": {
+      "correct": 37,
+      "n": 55,
+      "accuracy": 0.6727272727272727,
+      "wilson95": [
+        0.5410322355341942,
+        0.781869344070009
+      ]
+    },
+    "per_day_majority_vote_bagging": {
+      "correct": 36,
+      "n": 55,
+      "accuracy": 0.6545454545454545,
+      "wilson95": [
+        0.5225390350442641,
+        0.766372904601602
+      ]
+    },
+    "per_subject_mean_logreg": {
+      "correct": 35,
+      "n": 55,
+      "accuracy": 0.6363636363636364,
+      "wilson95": [
+        0.5042276149673347,
+        0.7506946847201942
+      ]
+    }
+  },
+  "bagging_no_selection_1092": {
+    "correct": 49,
+    "n": 55,
+    "accuracy": 0.8909090909090909,
+    "wilson95": [
+      0.7817445091032138,
+      0.949032750001036
+    ]
+  }
+}

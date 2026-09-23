@@ -1,0 +1,85 @@
+{
+  "n": 55,
+  "N_nw_by_group": {
+    "control": {
+      "subjects": 32,
+      "days_with_gt6h_zero": 135,
+      "days_total": 670,
+      "frac_days": 0.20149253731343283,
+      "subjects_with_ge1": 16,
+      "median_N_nw": 0.5,
+      "median_frac": 0.014705882352941176
+    },
+    "depressed": {
+      "subjects": 23,
+      "days_with_gt6h_zero": 25,
+      "days_total": 359,
+      "frac_days": 0.06963788300835655,
+      "subjects_with_ge1": 9,
+      "median_N_nw": 0.0,
+      "median_frac": 0.0
+    }
+  },
+  "N_nw_vs_D": {
+    "spearman": 0.683336924237858,
+    "p": 8.992486559791743e-09
+  },
+  "frac_nw_vs_group_mannwhitney_p": 0.19507520750356278,
+  "N_nw_vs_group_mannwhitney_p": 0.1480870062694773,
+  "D_vs_group_mannwhitney_p": 0.002120830643650452,
+  "D_vs_label_spearman": -0.4193523889305283,
+  "D_vs_label_partial_given_Nnw": -0.39683709521877025,
+  "Nnw_vs_label_partial_given_D": 0.1334777832666784,
+  "zero_frac_vs_label_spearman": 0.2438136158338736,
+  "quantile_gradient": {
+    "min": {
+      "n_features": 145,
+      "median_abs_rho_with_D": 0.762,
+      "median_abs_partial_rho_with_D_given_Nnw": 0.542,
+      "median_abs_rho_with_Nnw": 0.703,
+      "median_abs_partial_rho_with_Nnw_given_D": 0.381
+    },
+    "p25": {
+      "n_features": 145,
+      "median_abs_rho_with_D": 0.637,
+      "median_abs_partial_rho_with_D_given_Nnw": 0.416,
+      "median_abs_rho_with_Nnw": 0.573,
+      "median_abs_partial_rho_with_Nnw_given_D": 0.249
+    },
+    "p50": {
+      "n_features": 144,
+      "median_abs_rho_with_D": 0.342,
+      "median_abs_partial_rho_with_D_given_Nnw": 0.232,
+      "median_abs_rho_with_Nnw": 0.263,
+      "median_abs_partial_rho_with_Nnw_given_D": 0.056
+    },
+    "p75": {
+      "n_features": 145,
+      "median_abs_rho_with_D": 0.057,
+      "median_abs_partial_rho_with_D_given_Nnw": 0.126,
+      "median_abs_rho_with_Nnw": 0.098,
+      "median_abs_partial_rho_with_Nnw_given_D": 0.138
+    },
+    "max": {
+      "n_features": 144,
+      "median_abs_rho_with_D": 0.253,
+      "median_abs_partial_rho_with_D_given_Nnw": 0.24,
+      "median_abs_rho_with_Nnw": 0.115,
+      "median_abs_partial_rho_with_Nnw_given_D": 0.123
+    },
+    "mean": {
+      "n_features": 151,
+      "median_abs_rho_with_D": 0.283,
+      "median_abs_partial_rho_with_D_given_Nnw": 0.18,
+      "median_abs_rho_with_Nnw": 0.301,
+      "median_abs_partial_rho_with_Nnw_given_D": 0.144
+    },
+    "std": {
+      "n_features": 151,
+      "median_abs_rho_with_D": 0.505,
+      "median_abs_partial_rho_with_D_given_Nnw": 0.39,
+      "median_abs_rho_with_Nnw": 0.372,
+      "median_abs_partial_rho_with_Nnw_given_D": 0.106
+    }
+  }
+}
