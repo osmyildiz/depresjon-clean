@@ -1,0 +1,103 @@
+{
+  "selector": "info_gain",
+  "classifier": "Bagging",
+  "first_n_days": 12,
+  "variants": {
+    "full": {
+      "accuracy": 0.9272727272727272,
+      "correct": 51,
+      "n": 55,
+      "wilson95": [
+        0.8274005992480425,
+        0.9713559397728816
+      ],
+      "balanced_accuracy": 0.9252717391304348,
+      "kappa": 0.8505434782608696,
+      "sensitivity": 0.9130434782608695,
+      "specificity": 0.9375,
+      "TP": 21,
+      "TN": 30,
+      "FP": 2,
+      "FN": 2,
+      "k_median": 10.0,
+      "k_iqr": [
+        10.0,
+        20.0
+      ],
+      "n_features": 1092,
+      "seconds": 455.1
+    },
+    "no_minmax": {
+      "accuracy": 0.8727272727272727,
+      "correct": 48,
+      "n": 55,
+      "wilson95": [
+        0.759829723409341,
+        0.9369578957365714
+      ],
+      "balanced_accuracy": 0.8661684782608696,
+      "kappa": 0.736842105263158,
+      "sensitivity": 0.8260869565217391,
+      "specificity": 0.90625,
+      "TP": 19,
+      "TN": 29,
+      "FP": 3,
+      "FN": 4,
+      "k_median": 10.0,
+      "k_iqr": [
+        10.0,
+        20.0
+      ],
+      "n_features": 780,
+      "seconds": 547.5
+    },
+    "first12": {
+      "accuracy": 0.7636363636363637,
+      "correct": 42,
+      "n": 55,
+      "wilson95": [
+        0.6365163380760723,
+        0.8563334413198171
+      ],
+      "balanced_accuracy": 0.7540760869565217,
+      "kappa": 0.5112781954887218,
+      "sensitivity": 0.6956521739130435,
+      "specificity": 0.8125,
+      "TP": 16,
+      "TN": 26,
+      "FP": 6,
+      "FN": 7,
+      "k_median": 50.0,
+      "k_iqr": [
+        10.0,
+        150.0
+      ],
+      "n_features": 1092,
+      "seconds": 750.4
+    },
+    "first12_no_minmax": {
+      "accuracy": 0.7454545454545455,
+      "correct": 41,
+      "n": 55,
+      "wilson95": [
+        0.6169812871501447,
+        0.8418788522874073
+      ],
+      "balanced_accuracy": 0.7384510869565217,
+      "kappa": 0.47690217391304346,
+      "sensitivity": 0.6956521739130435,
+      "specificity": 0.78125,
+      "TP": 16,
+      "TN": 25,
+      "FP": 7,
+      "FN": 7,
+      "k_median": 50.0,
+      "k_iqr": [
+        20.0,
+        150.0
+      ],
+      "n_features": 780,
+      "seconds": 594.0
+    }
+  }
+}
