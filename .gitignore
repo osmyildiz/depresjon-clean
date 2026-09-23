@@ -11,8 +11,17 @@ cache/
 *.parquet
 *.feather
 
-# Experiment outputs
-results/
+# Experiment outputs. Runs are regenerable, so only the archived summaries
+# cited in the paper are tracked; everything else under results/ is ignored.
+results/*
+!results/*.json
+!results/reviewer2_per_subject.csv
+!results/nested/
+results/nested/*
+!results/nested/*/
+results/nested/*/*
+!results/nested/*/summary.json
+!results/nested/*/per_fold_predictions.csv
 logs/
 logs_*.txt
 *.log
