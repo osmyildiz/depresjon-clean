@@ -1,0 +1,61 @@
+Domain,TSFEL feature,Day-level columns,Subject-level columns (x7 order statistics)
+Spectral,Fundamental frequency,1,7
+Spectral,Human range energy,1,7
+Spectral,LPCC,12,84
+Spectral,MFCC,12,84
+Spectral,Max power spectrum,1,7
+Spectral,Maximum frequency,1,7
+Spectral,Median frequency,1,7
+Spectral,Power bandwidth,1,7
+Spectral,Spectral centroid,1,7
+Spectral,Spectral decrease,1,7
+Spectral,Spectral distance,1,7
+Spectral,Spectral entropy,1,7
+Spectral,Spectral kurtosis,1,7
+Spectral,Spectral positive turning points,1,7
+Spectral,Spectral roll-off,1,7
+Spectral,Spectral roll-on,1,7
+Spectral,Spectral skewness,1,7
+Spectral,Spectral slope,1,7
+Spectral,Spectral spread,1,7
+Spectral,Spectral variation,1,7
+Spectral,Spectrogram mean coefficient,32,224
+Spectral,Wavelet absolute mean,9,63
+Spectral,Wavelet energy,9,63
+Spectral,Wavelet entropy,1,7
+Spectral,Wavelet standard deviation,9,63
+Spectral,Wavelet variance,9,63
+Statistical,Absolute energy,1,7
+Statistical,Average power,1,7
+Statistical,ECDF,10,70
+Statistical,ECDF Percentile,2,14
+Statistical,ECDF Percentile Count,2,14
+Statistical,Entropy,1,7
+Statistical,Histogram mode,1,7
+Statistical,Interquartile range,1,7
+Statistical,Kurtosis,1,7
+Statistical,Max,1,7
+Statistical,Mean,1,7
+Statistical,Mean absolute deviation,1,7
+Statistical,Median,1,7
+Statistical,Median absolute deviation,1,7
+Statistical,Min,1,7
+Statistical,Peak to peak distance,1,7
+Statistical,Root mean square,1,7
+Statistical,Skewness,1,7
+Statistical,Standard deviation,1,7
+Statistical,Variance,1,7
+Temporal,Area under the curve,1,7
+Temporal,Autocorrelation,1,7
+Temporal,Centroid,1,7
+Temporal,Mean absolute diff,1,7
+Temporal,Mean diff,1,7
+Temporal,Median absolute diff,1,7
+Temporal,Median diff,1,7
+Temporal,Negative turning points,1,7
+Temporal,Neighbourhood peaks,1,7
+Temporal,Positive turning points,1,7
+Temporal,Signal distance,1,7
+Temporal,Slope,1,7
+Temporal,Sum absolute diff,1,7
+Temporal,Zero crossing rate,1,7

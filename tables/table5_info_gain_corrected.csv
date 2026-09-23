@@ -1,0 +1,21 @@
+features,folds,selection_rate,n_folds
+p50_0_Zero crossing rate,55,1.0,55
+p75_0_Zero crossing rate,55,1.0,55
+p25_0_Zero crossing rate,55,1.0,55
+mean_0_Zero crossing rate,55,1.0,55
+circ_bout_count_mean,55,1.0,55
+min_0_Zero crossing rate,52,0.9454545454545454,55
+p25_0_Spectrogram mean coefficient_16.13Hz,44,0.8,55
+min_0_Spectral spread,43,0.7818181818181819,55
+std_0_Spectrogram mean coefficient_17.74Hz,30,0.5454545454545454,55
+std_0_Wavelet absolute mean_5.0Hz,25,0.45454545454545453,55
+min_0_Spectrogram mean coefficient_48.39Hz,24,0.43636363636363634,55
+p50_0_Spectrogram mean coefficient_32.26Hz,23,0.41818181818181815,55
+max_0_LPCC_8,21,0.38181818181818183,55
+min_0_Spectrogram mean coefficient_8.06Hz,18,0.32727272727272727,55
+max_0_LPCC_4,18,0.32727272727272727,55
+mean_0_ECDF_2,15,0.2727272727272727,55
+p50_0_Spectrogram mean coefficient_16.13Hz,14,0.2545454545454545,55
+p50_0_Spectrogram mean coefficient_46.77Hz,13,0.23636363636363636,55
+min_0_Spectrogram mean coefficient_32.26Hz,13,0.23636363636363636,55
+p25_0_Spectrogram mean coefficient_35.48Hz,13,0.23636363636363636,55
