@@ -1,0 +1,34 @@
+[
+  {
+    "subject": "condition_16",
+    "true": 1,
+    "pred": 0,
+    "valid_days": 28,
+    "afftype": "unipolar",
+    "madrs1": 13.0
+  },
+  {
+    "subject": "condition_4",
+    "true": 1,
+    "pred": 0,
+    "valid_days": 14,
+    "afftype": "unipolar",
+    "madrs1": 20.0
+  },
+  {
+    "subject": "control_13",
+    "true": 0,
+    "pred": 1,
+    "valid_days": 14,
+    "afftype": null,
+    "madrs1": null
+  },
+  {
+    "subject": "control_22",
+    "true": 0,
+    "pred": 1,
+    "valid_days": 14,
+    "afftype": null,
+    "madrs1": null
+  }
+]

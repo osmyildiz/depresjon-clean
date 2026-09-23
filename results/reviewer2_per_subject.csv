@@ -1,0 +1,56 @@
+subject,true,pred,correct,valid_days,afftype,madrs1,madrs2,melancholic
+condition_1,1,1,True,15,unipolar,19.0,19.0,False
+condition_10,1,1,True,14,unipolar,28.0,21.0,False
+condition_11,1,1,True,15,unipolar,24.0,24.0,False
+condition_12,1,1,True,14,bipolar II,25.0,21.0,False
+condition_13,1,1,True,17,bipolar II,18.0,13.0,False
+condition_14,1,1,True,14,bipolar II,28.0,19.0,False
+condition_15,1,1,True,14,unipolar,14.0,18.0,False
+condition_16,1,0,False,28,unipolar,13.0,17.0,False
+condition_17,1,1,True,14,bipolar II,17.0,15.0,False
+condition_18,1,1,True,14,bipolar I,18.0,15.0,False
+condition_19,1,1,True,14,unipolar,26.0,21.0,False
+condition_2,1,0,False,26,bipolar II,24.0,11.0,False
+condition_20,1,1,True,17,unipolar,27.0,25.0,True
+condition_21,1,1,True,13,unipolar,26.0,21.0,False
+condition_22,1,1,True,14,unipolar,29.0,28.0,False
+condition_23,1,1,True,21,unipolar,29.0,23.0,False
+condition_3,1,0,False,14,unipolar,24.0,25.0,False
+condition_4,1,0,False,14,unipolar,20.0,16.0,False
+condition_5,1,1,True,14,unipolar,26.0,26.0,False
+condition_6,1,1,True,14,unipolar,18.0,15.0,False
+condition_7,1,1,True,14,bipolar II,24.0,25.0,
+condition_8,1,0,False,12,unipolar,20.0,16.0,
+condition_9,1,1,True,13,bipolar II,26.0,26.0,
+control_1,0,0,True,34,,,,
+control_10,0,0,True,14,,,,
+control_11,0,0,True,16,,,,
+control_12,0,0,True,23,,,,
+control_13,0,1,False,14,,,,
+control_14,0,0,True,14,,,,
+control_15,0,0,True,14,,,,
+control_16,0,0,True,16,,,,
+control_17,0,0,True,19,,,,
+control_18,0,0,True,16,,,,
+control_19,0,0,True,18,,,,
+control_2,0,0,True,21,,,,
+control_20,0,0,True,21,,,,
+control_21,0,0,True,21,,,,
+control_22,0,1,False,14,,,,
+control_23,0,0,True,14,,,,
+control_24,0,1,False,14,,,,
+control_25,0,0,True,14,,,,
+control_26,0,0,True,22,,,,
+control_27,0,0,True,13,,,,
+control_28,0,0,True,16,,,,
+control_29,0,0,True,16,,,,
+control_3,0,0,True,45,,,,
+control_30,0,0,True,14,,,,
+control_31,0,0,True,34,,,,
+control_32,0,0,True,34,,,,
+control_4,0,0,True,21,,,,
+control_5,0,0,True,32,,,,
+control_6,0,0,True,34,,,,
+control_7,0,0,True,34,,,,
+control_8,0,0,True,19,,,,
+control_9,0,0,True,19,,,,

@@ -1,0 +1,181 @@
+{
+  "major3_subgroup_sensitivity": {
+    "unipolar": {
+      "n": 15,
+      "correctly_detected": 11,
+      "sensitivity": 0.7333333333333333,
+      "wilson95": [
+        0.48049565938201017,
+        0.8910254667657092
+      ],
+      "madrs1_median": 24.0,
+      "valid_days_median": 14.0
+    },
+    "bipolar": {
+      "n": 8,
+      "correctly_detected": 7,
+      "sensitivity": 0.875,
+      "wilson95": [
+        0.5291118177025582,
+        0.9775825085573837
+      ],
+      "madrs1_median": 24.0,
+      "valid_days_median": 14.0
+    },
+    "fisher_p": 0.6213854795090493
+  },
+  "minor2_misclassified": [
+    {
+      "subject": "condition_16",
+      "true": 1,
+      "pred": 0,
+      "correct": false,
+      "valid_days": 28,
+      "afftype": "unipolar",
+      "madrs1": 13.0,
+      "madrs2": 17.0,
+      "melancholic": false
+    },
+    {
+      "subject": "condition_2",
+      "true": 1,
+      "pred": 0,
+      "correct": false,
+      "valid_days": 26,
+      "afftype": "bipolar II",
+      "madrs1": 24.0,
+      "madrs2": 11.0,
+      "melancholic": false
+    },
+    {
+      "subject": "condition_3",
+      "true": 1,
+      "pred": 0,
+      "correct": false,
+      "valid_days": 14,
+      "afftype": "unipolar",
+      "madrs1": 24.0,
+      "madrs2": 25.0,
+      "melancholic": false
+    },
+    {
+      "subject": "condition_4",
+      "true": 1,
+      "pred": 0,
+      "correct": false,
+      "valid_days": 14,
+      "afftype": "unipolar",
+      "madrs1": 20.0,
+      "madrs2": 16.0,
+      "melancholic": false
+    },
+    {
+      "subject": "condition_8",
+      "true": 1,
+      "pred": 0,
+      "correct": false,
+      "valid_days": 12,
+      "afftype": "unipolar",
+      "madrs1": 20.0,
+      "madrs2": 16.0,
+      "melancholic": null
+    },
+    {
+      "subject": "control_13",
+      "true": 0,
+      "pred": 1,
+      "correct": false,
+      "valid_days": 14,
+      "afftype": null,
+      "madrs1": NaN,
+      "madrs2": NaN,
+      "melancholic": null
+    },
+    {
+      "subject": "control_22",
+      "true": 0,
+      "pred": 1,
+      "correct": false,
+      "valid_days": 14,
+      "afftype": null,
+      "madrs1": NaN,
+      "madrs2": NaN,
+      "melancholic": null
+    },
+    {
+      "subject": "control_24",
+      "true": 0,
+      "pred": 1,
+      "correct": false,
+      "valid_days": 14,
+      "afftype": null,
+      "madrs1": NaN,
+      "madrs2": NaN,
+      "melancholic": null
+    }
+  ],
+  "major4_collinearity": {
+    "features": [
+      "p25_0_Zero crossing rate",
+      "p50_0_Zero crossing rate",
+      "p75_0_Zero crossing rate",
+      "mean_0_Zero crossing rate",
+      "min_0_Zero crossing rate"
+    ],
+    "pearson_matrix": [
+      [
+        1.0,
+        0.917,
+        0.785,
+        0.938,
+        0.805
+      ],
+      [
+        0.917,
+        1.0,
+        0.855,
+        0.957,
+        0.689
+      ],
+      [
+        0.785,
+        0.855,
+        1.0,
+        0.933,
+        0.587
+      ],
+      [
+        0.938,
+        0.957,
+        0.933,
+        1.0,
+        0.775
+      ],
+      [
+        0.805,
+        0.689,
+        0.587,
+        0.775,
+        1.0
+      ]
+    ],
+    "max_offdiag": 0.957,
+    "mean_abs_offdiag": 0.824
+  },
+  "major5_major6_zero_structure": {
+    "zero_crossing_definition": "TSFEL zero_cross = len(np.where(np.diff(np.sign(signal)))[0]); on non-negative activity counts np.sign takes only the values 0 and 1, so the feature counts transitions between zero-count minutes and non-zero-count minutes. The implicit threshold is activity count > 0, with no epsilon and no smoothing.",
+    "mean_fraction_of_zero_minutes_per_day": {
+      "control_median": 0.3634424603174603,
+      "depressed_median": 0.4342757936507936,
+      "mannwhitney_p": 0.07456593260893779
+    },
+    "mean_longest_daily_zero_run_minutes": {
+      "control_median": 79.55952380952381,
+      "depressed_median": 72.06666666666666,
+      "mannwhitney_p": 0.4476604160506972
+    },
+    "days_with_zero_run_over_360min": 160,
+    "days_total": 1029,
+    "non_wear_handling": "Days with fewer than 1440 timestamped minutes are discarded. Within a retained day no non-wear detection is applied: the Depresjon release carries no wear sensor or non-wear flag, and no Choi/Troiano-style algorithm was used. Zero-count minutes are therefore treated as inactivity regardless of whether the device was worn."
+  }
+}
