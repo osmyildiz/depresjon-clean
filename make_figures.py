@@ -83,18 +83,41 @@ fig.savefig(OUT / "figure2_daily_profiles.pdf")
 plt.close(fig)
 
 # --- Figure 3 ---
-hourly = X.reshape(len(X), 24, 60).mean(axis=2)
-mat = np.vstack([hourly[y == 0].mean(axis=0), hourly[y == 1].mean(axis=0)])
-fig, ax = plt.subplots(figsize=(9.5, 2.6))
-im = ax.imshow(mat, aspect="auto", cmap="YlGnBu", interpolation="nearest")
-ax.set_yticks([0, 1], ["Control", "Depressed"])
-ax.set_xticks(range(0, 24, 2), [f"{h:02d}" for h in range(0, 24, 2)])
+# Reviewer 3 asked for two colour-coded group curves instead of a heatmap: a
+# difference in amplitude is easier to read as two lines than as two rows of
+# colour. Shaded bands are the standard error of the hourly mean across the
+# subjects of each group, so the reader can see where the groups separate.
+hourly = X.reshape(len(X), 24, 60).mean(axis=2)          # (days, 24)
+subj_hourly, subj_lab = [], []
+for sid in np.unique(g):
+    m = g == sid
+    subj_hourly.append(hourly[m].mean(axis=0))
+    subj_lab.append(int(y[m][0]))
+subj_hourly = np.array(subj_hourly); subj_lab = np.array(subj_lab)
+
+hours = np.arange(24)
+fig, ax = plt.subplots(figsize=(7.2, 3.4))
+for cls, name, colour in [(0, "Control", "#1f4e9c"), (1, "Depressed", "#c0392b")]:
+    grp = subj_hourly[subj_lab == cls]
+    mean = grp.mean(axis=0)
+    sem = grp.std(axis=0, ddof=1) / np.sqrt(len(grp))
+    ax.plot(hours, mean, color=colour, lw=1.8, label=f"{name} (n = {len(grp)})")
+    ax.fill_between(hours, mean - sem, mean + sem, color=colour, alpha=0.18, lw=0)
 ax.set_xlabel("Hour of day")
-cb = fig.colorbar(im, ax=ax, pad=0.015)
-cb.set_label("Mean activity counts per minute")
-fig.savefig(OUT / "figure3_hourly_heatmap.png")
-fig.savefig(OUT / "figure3_hourly_heatmap.pdf")
+ax.set_ylabel("Mean activity counts per minute")
+ax.set_xlim(0, 23)
+ax.set_xticks(range(0, 24, 3))
+ax.grid(alpha=0.3, lw=0.5)
+ax.legend(frameon=False, loc="upper left")
+fig.savefig(OUT / "figure3_hourly_profiles.png")
+fig.savefig(OUT / "figure3_hourly_profiles.pdf")
 plt.close(fig)
+
+# peak difference, for the caption
+ctrl = subj_hourly[subj_lab == 0].mean(axis=0); dep = subj_hourly[subj_lab == 1].mean(axis=0)
+print(f"Figure 3: control peak {ctrl.max():.0f} at {ctrl.argmax():02d}:00, "
+      f"depressed peak {dep.max():.0f} at {dep.argmax():02d}:00; "
+      f"largest gap {np.max(ctrl - dep):.0f} counts at {np.argmax(ctrl - dep):02d}:00")
 
 pd.DataFrame(picked).T.to_csv(OUT / "figure2_selection.csv")
 print(f"\nwritten to {OUT}/")
